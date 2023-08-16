@@ -173,37 +173,49 @@ li{
     }
 }
 
-/* ul{
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-li {
-    padding-left: 1em;
-    text-indent: -1em;
-    margin-bottom: 2px;
+.form{
+    inline-size: 100%;
     display: grid;
-    grid-template-columns: 6% 95%;
+    grid-template-columns: repeat(1, 1fr);
     place-items: center;
     justify-items: start;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 1em;
-    place-items: center;
-    background-color: aqua;
-    overflow-wrap: break-word;
-} */
+    gap: 0.5em;
+    /* background-color: antiquewhite; */
+}
 
-/* li:before {
-    content: url("/assets/images/icon-list.svg");
-    padding-right: 8px;
-    padding-top: 5px;
-  } */
+label{
+    font-size: 0.75em;
+    font-weight: 700;
+}
 
-/* li>p{
-    inline-size: 18em;
-    text-align: left;
-    background-color: antiquewhite;
-} */
+input{
+    inline-size: 100%;
+    block-size: 3em;
+    padding-inline: 0.75em;
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn{
+    inline-size: 100%;
+    block-size: 3em;
+    border: none;
+    outline: none;
+    background-color: hsl(235, 18%, 26%);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+}
+
+.valid{
+    /* background-color: red; */
+    background-image: linear-gradient(to right, rgb(243, 171, 183), rgb(248, 162, 104));
+}
+
+.invalid{
+    border: 1px solid red;
+    background-color: salmon;
+    color: red;
+}
