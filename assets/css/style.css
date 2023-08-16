@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-family: Roboto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite; */
+}
+
+.main{
+    position: absolute;
+    top:0;
+    left:0;
+    min-inline-size: 100%;
+    min-block-size: 100%;
+    /* margin: auto; */
+    background-color: hsl(234, 29%, 20%);
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    inline-size: 100%;
+    block-size: 100%;
+    border-radius: 1.75rem;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    --gap: 0.5em;
+    gap: var(--gap);
+    /* grid-template-rows: 25%, 75%; */
+    
+}
+
+.img-mobile{
+    inline-size: 100%;
+    block-size: 20em;
+    background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    /* background-color: black; */
+}
+
+@media (min-width:500px) {
+    .container{
+        inline-size: 60rem;
+        block-size: 40rem;
+        grid-template-columns: 50% 50%;
+        place-content: center;
+        justify-items: center;
+        /* justify-content: center; */
+        --gap: 2.15em;  
+        padding: 1.5em;
+    }
+
+    .img-mobile{
+        display: none;
+    }
+
+    .img-desk{
+        inline-size: 90%;
+        block-size: 37em;
+        background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-inline-end: 0.5em;
+        /* background-color: black; */
+    }
+    
+}
+
+.content{
+    inline-size: 90%;
+    min-block-size: 25em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    /* background-color: pink; */
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
+    inline-size: 100%;
+    /* background-color: aquamarine; */
+}
+
+p{
+    font-size: 16px;
+}
+
+/* .list{
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.point{
+    position: relative;
+    inline-size: 60%;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.point::before{
+    content: url("/assets/images/icon-list.svg");
+    position: absolute;
+    top: 0;
+    left: -3em;
+    padding-right: 8px;
+    margin-right: 10px;
+} */
+
+@media (min-width: 500px){
+    .content{
+        inline-size: 80%;
+        block-size: 80%;
+        margin-block: auto;
+        text-align: justify;
+    }
+
+    h1{
+        font-size: 3.5em;
+    }
+
+}
+
+ul{
+    list-style: none;
+    inline-size: 100%;
+    /* display: inline-block;
+    text-align: left; */
+    /* background-color: beige; */
+}
+
+li{
+    background: url("/assets/images/icon-list.svg") center no-repeat;
+    background-position: left top;
+    padding-left: 2em;
+    /* text-indent: -1em; */
+    inline-size: 19em;
+    text-align: left;
+    margin-bottom: 5px;
+    min-block-size: 2.5em;
+    /* text-indent: ; */
+    /* background-color: aquamarine; */
+}
+
+@media (min-width: 500px){
+    li{
+        inline-size: 100%;
+    }
+}
+
+/* ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -1em;
+    margin-bottom: 2px;
+    display: grid;
+    grid-template-columns: 6% 95%;
+    place-items: center;
+    justify-items: start;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1em;
+    place-items: center;
+    background-color: aqua;
+    overflow-wrap: break-word;
+} */
+
+/* li:before {
+    content: url("/assets/images/icon-list.svg");
+    padding-right: 8px;
+    padding-top: 5px;
+  } */
+
+/* li>p{
+    inline-size: 18em;
+    text-align: left;
+    background-color: antiquewhite;
+} */
