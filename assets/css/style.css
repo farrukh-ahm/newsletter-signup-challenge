@@ -219,3 +219,84 @@ input{
     background-color: salmon;
     color: red;
 }
+
+.modal{
+    position: absolute;
+    top:0;
+    left:0;
+    min-inline-size: 100%;
+    min-block-size: 100%;
+    /* margin: auto; */
+    background-color: #fff;
+    padding: 2em;
+    /* display: grid;
+    place-items: center; */
+}
+
+.modal > img{
+    margin-block-start: 10em;
+    margin-block-end: 2em;
+}
+
+.modal>p{
+    inline-size: 18em;
+    /* background-color: aqua; */
+}
+
+.modal > h1{
+    inline-size: 5em;
+    margin-block-end: 0.75em;
+}
+
+.modal-close{
+    inline-size: 100%;
+    block-size: 3em;
+    border: none;
+    outline: none;
+    background-color: hsl(235, 18%, 26%);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-block-start: 15em;
+}
+
+.modal-close:hover{
+    background-image: linear-gradient(to right, rgb(243, 171, 183), rgb(248, 162, 104));
+}
+
+/* .svg{
+    inline-size: 3em;
+    block-size: 3em;
+    background-image: url(/assets/images/icon-success.svg) left center no-repeat;
+} */
+
+@media (min-width: 500px){
+    .modal{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-inline-size: 20rem;
+        min-block-size: 30rem;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding-inline: 3em;
+    }
+
+    .modal::backdrop{
+        opacity: 1;
+        background-color: hsl(234, 29%, 20%);
+    }
+
+    .modal > img{
+        margin-block-start: 1.5em;
+    }
+
+    .modal>p{
+        inline-size: 25em;
+        /* background-color: aqua; */
+    }
+
+    .modal-close{
+        margin-block-start: 3em;
+    }
+}
