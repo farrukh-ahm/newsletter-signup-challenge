@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Responsive design](./screenshot.jpg)
+![Responsive design](./screenshot.JPG)
 
 ![Desktop View](./assets/images/desktop.JPG)
 
