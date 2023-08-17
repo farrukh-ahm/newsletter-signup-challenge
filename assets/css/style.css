@@ -11,11 +11,6 @@
 
 body{
     font-family: Roboto;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite; */
 }
 
 .main{
@@ -24,7 +19,6 @@ body{
     left:0;
     min-inline-size: 100%;
     min-block-size: 100%;
-    /* margin: auto; */
     background-color: hsl(234, 29%, 20%);
     display: grid;
     place-items: center;
@@ -39,8 +33,6 @@ body{
     grid-template-columns: repeat(1, 1fr);
     --gap: 0.5em;
     gap: var(--gap);
-    /* grid-template-rows: 25%, 75%; */
-    
 }
 
 .img-mobile{
@@ -52,7 +44,6 @@ body{
     background-size: cover;
     border-radius: 0 0 15px 15px;
     overflow: hidden;
-    /* background-color: black; */
 }
 
 @media (min-width:500px) {
@@ -62,7 +53,6 @@ body{
         grid-template-columns: 50% 50%;
         place-content: center;
         justify-items: center;
-        /* justify-content: center; */
         --gap: 2.15em;  
         padding: 1.5em;
     }
@@ -81,7 +71,6 @@ body{
         border-radius: 15px;
         overflow: hidden;
         margin-inline-end: 0.5em;
-        /* background-color: black; */
     }
     
 }
@@ -95,42 +84,17 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1.5em;
-    /* background-color: pink; */
 }
 
 h1{
     font-size: 3em;
     font-weight: 700;
     inline-size: 100%;
-    /* background-color: aquamarine; */
 }
 
 p{
     font-size: 16px;
 }
-
-/* .list{
-    inline-size: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.point{
-    position: relative;
-    inline-size: 60%;
-    margin: auto;
-    background-color: aquamarine;
-}
-
-.point::before{
-    content: url("/assets/images/icon-list.svg");
-    position: absolute;
-    top: 0;
-    left: -3em;
-    padding-right: 8px;
-    margin-right: 10px;
-} */
 
 @media (min-width: 500px){
     .content{
@@ -149,22 +113,16 @@ p{
 ul{
     list-style: none;
     inline-size: 100%;
-    /* display: inline-block;
-    text-align: left; */
-    /* background-color: beige; */
 }
 
 li{
     background: url("../images/icon-list.svg") center no-repeat;
     background-position: left top;
     padding-left: 2em;
-    /* text-indent: -1em; */
     inline-size: 19em;
     text-align: left;
     margin-bottom: 5px;
     min-block-size: 2.5em;
-    /* text-indent: ; */
-    /* background-color: aquamarine; */
 }
 
 @media (min-width: 500px){
@@ -180,7 +138,6 @@ li{
     place-items: center;
     justify-items: start;
     gap: 0.5em;
-    /* background-color: antiquewhite; */
 }
 
 label{
@@ -206,11 +163,9 @@ input{
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    /* background-image: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
 }
 
 .valid{
-    /* background-color: red; */
     background-image: linear-gradient(to right, rgb(243, 171, 183), rgb(248, 162, 104));
 }
 
@@ -226,11 +181,8 @@ input{
     left:0;
     min-inline-size: 100%;
     min-block-size: 100%;
-    /* margin: auto; */
     background-color: #fff;
     padding: 2em;
-    /* display: grid;
-    place-items: center; */
 }
 
 .modal > img{
@@ -240,7 +192,6 @@ input{
 
 .modal>p{
     inline-size: 18em;
-    /* background-color: aqua; */
 }
 
 .modal > h1{
@@ -263,12 +214,6 @@ input{
 .modal-close:hover{
     background-image: linear-gradient(to right, rgb(243, 171, 183), rgb(248, 162, 104));
 }
-
-/* .svg{
-    inline-size: 3em;
-    block-size: 3em;
-    background-image: url(/assets/images/icon-success.svg) left center no-repeat;
-} */
 
 @media (min-width: 500px){
     .modal{
@@ -293,10 +238,13 @@ input{
 
     .modal>p{
         inline-size: 25em;
-        /* background-color: aqua; */
     }
 
     .modal-close{
         margin-block-start: 3em;
     }
+}
+
+span{
+    color: hsl(228, 45%, 44%);
 }

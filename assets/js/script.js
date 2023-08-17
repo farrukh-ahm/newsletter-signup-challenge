@@ -19,7 +19,7 @@ emailListener.addEventListener("input", (e)=>{
 submit.addEventListener("click", ()=>{
   if(emailListener.value.trim().includes("@")){
     emailListener.classList.remove("invalid")
-    para.innerText = `A confirmation email has been sent to ${emailListener.value}. 
+    para.innerHTML = `A confirmation email has been sent to <span>${emailListener.value}</span>. 
     Please open it and click the button inside to confirm your subscription.`
     dialogBox.showModal()
   }
